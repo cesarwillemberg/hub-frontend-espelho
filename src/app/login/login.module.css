@@ -1,0 +1,472 @@
+.screen {
+  display: grid;
+  min-height: 100svh;
+  place-items: center;
+  padding: clamp(14px, 4vh, 48px) 24px;
+  background: #f5f3f1;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: min(100%, 1040px);
+  min-height: min(560px, calc(100svh - 28px));
+  overflow: hidden;
+  border: 1px solid #e5e5e5;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 18px 55px rgba(35, 25, 25, 0.08);
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  padding: clamp(32px, 5vw, 56px);
+  background:
+    radial-gradient(circle at -6% 6%, rgba(232, 76, 72, 0.18), transparent 31%),
+    radial-gradient(circle at 38% 100%, rgba(215, 49, 45, 0.06), transparent 38%),
+    linear-gradient(135deg, #fdecea 0%, #fff 72%);
+}
+
+.intro::before {
+  position: absolute;
+  top: -105px;
+  left: -95px;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: rgba(220, 56, 51, 0.12);
+  filter: blur(28px);
+  content: "";
+}
+
+.introContent {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: #e12d29;
+  font-size: 1.16rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.brand svg {
+  width: 25px;
+  height: 25px;
+}
+
+.intro h1 {
+  max-width: 410px;
+  margin: 30px 0 0;
+  color: #18181b;
+  font-size: clamp(1.9rem, 3.3vw, 2.35rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1.08;
+}
+
+.description {
+  max-width: 420px;
+  margin: 18px 0 0;
+  color: #62626a;
+  font-size: 0.82rem;
+  line-height: 1.55;
+}
+
+.capabilities {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 34px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.capabilities li {
+  display: flex;
+  min-height: 54px;
+  align-items: center;
+  gap: 11px;
+  border: 1px solid #f0cecb;
+  border-radius: 12px;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.77);
+  box-shadow: 0 6px 16px rgba(100, 42, 42, 0.035);
+  color: #2d2d32;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.capabilityIcon {
+  display: grid;
+  width: 29px;
+  height: 29px;
+  flex: 0 0 29px;
+  place-items: center;
+  border-radius: 9px;
+  background: #fde5e3;
+  color: #d8312c;
+  font-size: 0.78rem;
+}
+
+.loginPanel {
+  position: relative;
+  display: flex;
+  padding: clamp(32px, 5vw, 56px);
+  background: #fff;
+}
+
+.controls {
+  position: absolute;
+  top: 20px;
+  right: 24px;
+  z-index: 1;
+}
+
+.controls :global(.mh-header-controls) {
+  gap: 4px;
+}
+
+.controls :global(.mh-button) {
+  color: #4d4d55;
+}
+
+.formWrap {
+  display: flex;
+  width: min(100%, 390px);
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.formHeader h2 {
+  margin: 0;
+  color: #1b1b1f;
+  font-size: 1.48rem;
+  font-weight: 800;
+  letter-spacing: -0.045em;
+}
+
+.formHeader p {
+  margin: 8px 0 0;
+  color: #777780;
+  font-size: 0.76rem;
+}
+
+.alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 25px;
+  border: 1px solid #f5c3c1;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fde5e3;
+  color: #c23a36;
+  font-size: 0.69rem;
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.alert svg {
+  flex: 0 0 auto;
+  margin-top: 1px;
+  font-size: 0.9rem;
+}
+
+.form {
+  display: grid;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.field {
+  display: grid;
+  gap: 7px;
+}
+
+.field label,
+.remember {
+  color: #39393f;
+  font-size: 0.68rem;
+  font-weight: 700;
+}
+
+.field input {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #d9d9df;
+  border-radius: 8px;
+  outline: 0;
+  padding: 0 12px;
+  background: #fff;
+  color: #25252a;
+  font: inherit;
+  font-size: 0.73rem;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.field input::placeholder {
+  color: #a2a2aa;
+  font-style: italic;
+}
+
+.field input:focus {
+  border-color: #db4b47;
+  box-shadow: 0 0 0 3px rgba(211, 47, 47, 0.12);
+}
+
+.labelRow,
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.labelRow a,
+.options > a,
+.signup a {
+  color: #d32f2f;
+  font-size: 0.65rem;
+  font-weight: 700;
+}
+
+.labelRow a:hover,
+.options > a:hover,
+.signup a:hover {
+  text-decoration: underline;
+}
+
+.passwordInput {
+  position: relative;
+}
+
+.passwordInput input {
+  padding-right: 42px;
+}
+
+.passwordInput button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 0;
+  background: transparent;
+  color: #8d8d95;
+  cursor: pointer;
+}
+
+.passwordInput button:focus-visible {
+  outline: 2px solid #d32f2f;
+  outline-offset: -5px;
+  border-radius: 6px;
+}
+
+.options {
+  margin-top: -2px;
+}
+
+.remember {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.remember input {
+  width: 14px;
+  height: 14px;
+  margin: 0;
+  accent-color: #d32f2f;
+}
+
+.submit {
+  display: inline-flex;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+  border: 0;
+  border-radius: 8px;
+  background: #d30e09;
+  box-shadow: 0 6px 10px rgba(192, 35, 31, 0.2);
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 800;
+  transition: background 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.submit:hover {
+  background: #b90d09;
+  box-shadow: 0 8px 15px rgba(192, 35, 31, 0.24);
+  transform: translateY(-1px);
+}
+
+.submit:focus-visible {
+  outline: 3px solid rgba(211, 47, 47, 0.3);
+  outline-offset: 3px;
+}
+
+.signup {
+  margin: 27px 0 0;
+  color: #71717a;
+  text-align: center;
+  font-size: 0.67rem;
+}
+
+.signup button {
+  background: none;
+  border: 0;
+  color: #d32f2f;
+  font: inherit;
+  font-size: 0.67rem;
+  font-weight: 800;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.signup button:hover {
+  opacity: 0.9;
+}
+
+.signup button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.copyright {
+  margin: 36px 0 0;
+  color: #aaaab1;
+  text-align: center;
+  font-size: 0.58rem;
+  letter-spacing: 0.02em;
+}
+
+:global(.dark) .screen {
+  background: #101014;
+}
+
+:global(.dark) .card,
+:global(.dark) .loginPanel {
+  border-color: #303037;
+  background: #1a1a20;
+}
+
+:global(.dark) .intro {
+  background:
+    radial-gradient(circle at -6% 6%, rgba(232, 76, 72, 0.28), transparent 31%),
+    radial-gradient(circle at 38% 100%, rgba(215, 49, 45, 0.12), transparent 38%),
+    linear-gradient(135deg, #321f22 0%, #1a1a20 72%);
+}
+
+:global(.dark) .intro h1,
+:global(.dark) .formHeader h2,
+:global(.dark) .capabilities li,
+:global(.dark) .field label,
+:global(.dark) .remember {
+  color: #f5f5f7;
+}
+
+:global(.dark) .description,
+:global(.dark) .formHeader p,
+:global(.dark) .signup,
+:global(.dark) .copyright {
+  color: #adadb7;
+}
+
+:global(.dark) .capabilities li {
+  border-color: #513535;
+  background: rgba(32, 32, 38, 0.85);
+}
+
+:global(.dark) .field input {
+  border-color: #42424b;
+  background: #222229;
+  color: #f5f5f7;
+}
+
+:global(.dark) .controls :global(.mh-button) {
+  color: #f5f5f7;
+}
+
+@media (max-width: 767px) {
+  .screen {
+    display: block;
+    padding: 16px;
+  }
+
+  .card {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .intro,
+  .loginPanel {
+    padding: 34px clamp(24px, 7vw, 52px);
+  }
+
+  .introContent {
+    justify-content: flex-start;
+  }
+
+  .intro h1 {
+    max-width: 470px;
+    margin-top: 25px;
+  }
+
+  .description {
+    max-width: 540px;
+  }
+
+  .formWrap {
+    max-width: 420px;
+  }
+
+  .copyright {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 420px) {
+  .screen {
+    padding: 0;
+  }
+
+  .card {
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+
+  .intro,
+  .loginPanel {
+    padding: 30px 22px;
+  }
+
+  .capabilities {
+    grid-template-columns: 1fr;
+    margin-top: 27px;
+  }
+
+  .options {
+    align-items: flex-start;
+  }
+}

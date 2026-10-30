@@ -1,0 +1,99 @@
+{
+  "navigation": { "features": "Recursos", "benefits": "Beneficios", "security": "Seguridad", "menu": "Abrir menú", "language": "Idioma", "theme": "Cambiar tema", "enter": "Entrar", "createAccount": "Crear cuenta" },
+  "login": { "title": "Entrar", "subtitle": "Accede a tu cuenta para gestionar tu tienda.", "invalidCredentials": "Correo o contraseña no válidos. Verifica los datos e inténtalo de nuevo.", "email": "Correo electrónico", "emailPlaceholder": "nombre@mercado.com", "password": "Contraseña", "showPassword": "Mostrar contraseña", "hidePassword": "Ocultar contraseña", "forgotPassword": "Olvidé mi contraseña", "rememberMe": "Recuérdame", "forgotEmail": "Olvidé mi correo", "submit": "Entrar", "signingIn": "Ingresando…", "noAccount": "¿No tienes una cuenta?", "createMarket": "Crear mercado", "copyright": "© 2024 Marvi Hub. Todos los derechos reservados.", "intro": { "title": "Gestión inteligente para supermercados", "description": "Controla productos, pedidos, inventario, promociones y usuarios en un solo lugar. Una plataforma completa para tu negocio minorista.", "capabilities": "Funciones de la plataforma", "products": "Productos", "orders": "Pedidos", "inventory": "Inventario", "promotions": "Promociones" } },
+  "hero": { "eyebrow": "Plataforma de gestión de mercados", "title": "Gestión inteligente para supermercados", "titleMain": "Gestión", "titleHighlight": "Inteligente", "titleConnector": "para", "titleSuffix": "supermercados", "subtitle": "Productos, inventario, pedidos, promociones y permisos en un solo lugar. Deja las planillas atrás y controla todo el mercado en tiempo real.", "primaryCta": "Crear cuenta gratis", "secondaryCta": "Entrar al Hub", "sync": "Inventario sincronizado", "today": "+12% hoy" },
+  "features": { "eyebrow": "Recursos", "title": "Todo lo que el mercado necesita para funcionar", "audit": "Registros de auditoría", "items": { "products": { "title": "Productos", "description": "Registro inteligente con lector de códigos de barras e integración con proveedores." }, "inventory": { "title": "Inventario", "description": "Previsión de demanda con IA y alertas automáticas de quiebre." }, "orders": { "title": "Pedidos", "description": "Gestión centralizada de compras y recepciones en un único flujo." }, "promotions": { "title": "Promociones", "description": "Motor de reglas complejas para folletos y descuentos dinámicos." }, "users": { "title": "Usuarios", "description": "Control granular de acceso para cajeros, gerentes y dirección." }, "coupons": { "title": "Cupones", "description": "Generación masiva y seguimiento de conversión por campaña." } } },
+  "benefits": { "title": "Todo lo que tu mercado necesita en un solo lugar", "items": { "integrated": { "title": "Del inventario a la caja, integrado", "description": "Una sola base de datos alimenta productos, pedidos e informes." }, "data": { "title": "Decisiones con datos reales", "description": "Consulta rotación, quiebres y margen sin exportar nada." }, "automation": { "title": "Menos retrabajo, menos planillas", "description": "Las tareas repetitivas se vuelven automatizaciones en pocos clics." }, "roles": { "title": "Equipo alineado por rol", "description": "Cada función tiene el acceso correcto — ni más ni menos." }, "scale": { "title": "Escala con el mercado", "description": "De una tienda a una red, sin cambiar de sistema." } } },
+  "security": { "eyebrow": "Seguridad", "title": "Control de acceso seguro", "description": "Roles, permisos granulares y registro de actividad. Tú decides quién crea productos, aprueba pedidos y ve las finanzas — con auditoría en cada acción." },
+  "cta": { "title": "¿Listo para organizar la gestión de tu supermercado?", "primary": "Crear cuenta", "secondary": "Entrar" },
+  "footer": { "copyright": "© {{year}} Marvi Hub. Inteligencia en gestión minorista.", "columns": { "legal": { "title": "Legal", "privacy": "Privacidad", "terms": "Términos" }, "support": { "title": "Soporte", "support": "Soporte", "status": "Estado" }, "company": { "title": "Empresa", "careers": "Carreras", "blog": "Blog" }, "resources": { "title": "Recursos", "docs": "Documentación", "api": "API" } } },
+  "dashboard": {
+    "title": "Panel",
+    "subtitle": "Visión general de tu operación",
+    "periodToday": "Hoy",
+    "period7d": "7 días",
+    "period30d": "30 días",
+    "newOrder": "Nuevo Pedido",
+    "kpi": {
+      "pendingOrders": "Pedidos Pendientes",
+      "preparingOrders": "En Preparación",
+      "lowStock": "Stock Bajo",
+      "todayRevenue": "Facturación Hoy",
+      "pendingSupport": "Esperando tu acción",
+      "preparingSupport": "Siguiente paso: envío",
+      "lowStockSupport": "Ver productos críticos",
+      "revenueSupport": "Valor de ventas hoy",
+      "noData": "Sin datos aún"
+    },
+    "revenueChart": {
+      "title": "Facturación en el período",
+      "noSales": "Sin ventas en el período",
+      "noSalesDesc": "No hay registros de facturación para el intervalo seleccionado."
+    },
+    "recentOrders": {
+      "title": "Pedidos Recientes",
+      "subtitle": "Últimos pedidos de la operación",
+      "viewAll": "Ver todos",
+      "empty": "No hay pedidos recientes.",
+      "viewAllOrders": "Ver todos los pedidos",
+      "columns": { "order": "Pedido", "customer": "Cliente", "status": "Estado", "total": "Total", "date": "Fecha" }
+    },
+    "criticalStock": {
+      "title": "Stock Crítico",
+      "subtitle": "Productos con menor stock disponible",
+      "viewAll": "Ver todos",
+      "empty": "Sin productos de stock bajo",
+      "emptyDesc": "Todos los productos están por encima del umbral de reposición.",
+      "viewCatalog": "Ver catálogo",
+      "reorder": "Reponer",
+      "columns": { "inStock": "en stock", "min": "mín." }
+    },
+    "recentActivity": {
+      "title": "Actividad Reciente",
+      "subtitle": "Últimas acciones registradas en la auditoría",
+      "viewAll": "Ver todos",
+      "empty": "Sin actividad reciente",
+      "emptyDesc": "No hay registros de auditoría para mostrar."
+    },
+    "quickActions": {
+      "title": "Acciones Rápidas",
+      "newProduct": "Nuevo Producto",
+      "newOrder": "Nuevo Pedido",
+      "adjustStock": "Ajustar Stock",
+      "viewOrders": "Ver Pedidos"
+    },
+    "status": {
+      "pending": "Pendiente",
+      "preparing": "Preparando",
+      "shipped": "Enviado",
+      "delivered": "Entregado",
+      "cancelled": "Cancelado"
+    },
+    "error": {
+      "load": "Error cargando métricas",
+      "retry": "Intentar de nuevo"
+    }
+  },
+  "settings": {
+    "backToApp": "Volver a la aplicación",
+    "personal": "Personal",
+    "general": "General",
+    "language": {
+      "title": "Idioma",
+      "description": "Idioma usado en la interfaz de la aplicación",
+      "auto": "Detectar automáticamente",
+      "portuguese": "Portugués (Brasil)",
+      "english": "Inglés",
+      "spanish": "Español"
+    }
+  },
+  "selectMarket": {
+    "title": "Seleccione un Mercado",
+    "subtitle": "Elige qué mercado deseas gestionar ahora",
+    "searchPlaceholder": "Buscar mercado por nombre o slug...",
+    "currentBadge": "Activo",
+    "enterButton": "Acceder al Panel",
+    "switchAccount": "Iniciar sesión con otra cuenta",
+    "noMarkets": "No se encontró ningún mercado"
+  }
+}

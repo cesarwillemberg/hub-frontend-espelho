@@ -1,0 +1,99 @@
+{
+  "navigation": { "features": "Features", "benefits": "Benefits", "security": "Security", "menu": "Open menu", "language": "Language", "theme": "Toggle theme", "enter": "Sign in", "createAccount": "Create account" },
+  "login": { "title": "Sign in", "subtitle": "Access your account to manage your store.", "invalidCredentials": "Invalid email or password. Check your details and try again.", "email": "Email", "emailPlaceholder": "name@store.com", "password": "Password", "showPassword": "Show password", "hidePassword": "Hide password", "forgotPassword": "Forgot your password", "rememberMe": "Remember me", "forgotEmail": "Forgot your email", "submit": "Sign in", "signingIn": "Signing in…", "noAccount": "Don’t have an account?", "createMarket": "Create store", "copyright": "© 2024 Marvi Hub. All rights reserved.", "intro": { "title": "Smart management for supermarkets", "description": "Control products, orders, inventory, promotions and users all in one place. A complete platform for your retail business.", "capabilities": "Platform capabilities", "products": "Products", "orders": "Orders", "inventory": "Inventory", "promotions": "Promotions" } },
+  "hero": { "eyebrow": "Grocery management platform", "title": "Smart management for supermarkets", "titleMain": "Smart", "titleHighlight": "Management", "titleConnector": "for", "titleSuffix": "supermarkets", "subtitle": "Products, inventory, orders, promotions and permissions in one place. Leave spreadsheets behind and manage the entire store in real time.", "primaryCta": "Create free account", "secondaryCta": "Enter the Hub", "sync": "Inventory synchronized", "today": "+12% today" },
+  "features": { "eyebrow": "Features", "title": "Everything a store needs to run", "audit": "Audit logs", "items": { "products": { "title": "Products", "description": "Smart registration with barcode scanner and supplier integrations." }, "inventory": { "title": "Inventory", "description": "AI-powered demand forecasting and automated stockout alerts." }, "orders": { "title": "Orders", "description": "Centralized purchasing and receiving management in one flow." }, "promotions": { "title": "Promotions", "description": "Complex rules engine for flyers and dynamic discounts." }, "users": { "title": "Users", "description": "Granular access controls for cashiers, managers and directors." }, "coupons": { "title": "Coupons", "description": "Bulk generation and campaign conversion tracking." } } },
+  "benefits": { "title": "Everything your store needs in one place", "items": { "integrated": { "title": "From inventory to checkout, connected", "description": "One database powers products, orders and reports." }, "data": { "title": "Decisions with real data", "description": "See turnover, stockouts and margin without exporting anything." }, "automation": { "title": "Less rework, fewer spreadsheets", "description": "Repetitive tasks become automations in a few clicks." }, "roles": { "title": "Teams aligned by role", "description": "Every role gets the right access — no more, no less." }, "scale": { "title": "Scales with your store", "description": "From one location to a network, without changing systems." } } },
+  "security": { "eyebrow": "Security", "title": "Secure access control", "description": "Roles, granular permissions and activity records. You decide who creates products, approves orders and sees finance — with an audit trail for every action." },
+  "cta": { "title": "Ready to organize your supermarket management?", "primary": "Create account", "secondary": "Sign in" },
+  "footer": { "copyright": "© {{year}} Marvi Hub. Retail management intelligence.", "columns": { "legal": { "title": "Legal", "privacy": "Privacy", "terms": "Terms" }, "support": { "title": "Support", "support": "Support", "status": "Status" }, "company": { "title": "Company", "careers": "Careers", "blog": "Blog" }, "resources": { "title": "Resources", "docs": "Documentation", "api": "API" } } },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of your operation",
+    "periodToday": "Today",
+    "period7d": "7 days",
+    "period30d": "30 days",
+    "newOrder": "New Order",
+    "kpi": {
+      "pendingOrders": "Pending Orders",
+      "preparingOrders": "In Preparation",
+      "lowStock": "Low Stock",
+      "todayRevenue": "Today's Revenue",
+      "pendingSupport": "Awaiting your action",
+      "preparingSupport": "Next step: shipping",
+      "lowStockSupport": "View critical products",
+      "revenueSupport": "Sales value today",
+      "noData": "No data yet"
+    },
+    "revenueChart": {
+      "title": "Revenue in the period",
+      "noSales": "No sales in the period",
+      "noSalesDesc": "There are no revenue records for the selected interval."
+    },
+    "recentOrders": {
+      "title": "Recent Orders",
+      "subtitle": "Latest orders in the operation",
+      "viewAll": "View all",
+      "empty": "No recent orders.",
+      "viewAllOrders": "View all orders",
+      "columns": { "order": "Order", "customer": "Customer", "status": "Status", "total": "Total", "date": "Date" }
+    },
+    "criticalStock": {
+      "title": "Critical Stock",
+      "subtitle": "Products with lowest stock available",
+      "viewAll": "View all",
+      "empty": "No low stock products",
+      "emptyDesc": "All products are above the reorder threshold.",
+      "viewCatalog": "View catalog",
+      "reorder": "Reorder",
+      "columns": { "inStock": "in stock", "min": "min." }
+    },
+    "recentActivity": {
+      "title": "Recent Activity",
+      "subtitle": "Latest actions recorded in the audit",
+      "viewAll": "View all",
+      "empty": "No recent activity",
+      "emptyDesc": "No audit records to display."
+    },
+    "quickActions": {
+      "title": "Quick Actions",
+      "newProduct": "New Product",
+      "newOrder": "New Order",
+      "adjustStock": "Adjust Stock",
+      "viewOrders": "View Orders"
+    },
+    "status": {
+      "pending": "Pending",
+      "preparing": "Preparing",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled"
+    },
+    "error": {
+      "load": "Error loading metrics",
+      "retry": "Try again"
+    }
+  },
+  "settings": {
+    "backToApp": "Back to app",
+    "personal": "Personal",
+    "general": "General",
+    "language": {
+      "title": "Language",
+      "description": "Language used for the app interface",
+      "auto": "Auto detect",
+      "portuguese": "Portuguese (Brazil)",
+      "english": "English",
+      "spanish": "Spanish"
+    }
+  },
+  "selectMarket": {
+    "title": "Select a Market",
+    "subtitle": "Choose which market you want to manage now",
+    "searchPlaceholder": "Search market by name or slug...",
+    "currentBadge": "Active",
+    "enterButton": "Access Dashboard",
+    "switchAccount": "Sign in with another account",
+    "noMarkets": "No markets found"
+  }
+}
