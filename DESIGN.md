@@ -240,7 +240,7 @@ Regras de conteúdo para a landing:
 - **Feedback atual:** o envio é demonstrativo e mostra erro de credenciais. Ao integrar autenticação, substituir por estados reais: carregando, erro de credenciais, erro de rede, bloqueio/rate limit e sucesso/redirecionamento.
 - **Acesso alternativo:** link para criar mercado.
 
-### 6.3 Cadastro (`/register`)
+### 6.3 Cadastro (`/criar-conta`)
 
 **Estrutura:** cartão dividido em introdução de produto e formulário em grupos.
 
@@ -342,7 +342,7 @@ Padrões obrigatórios para essas áreas:
 | Landing page | `src/components/home/` |
 | Componentes compartilhados | `src/components/shared/` e `src/components/ui/` |
 | Login | `src/app/login/` |
-| Cadastro | `src/app/register/` |
+| Cadastro | `src/app/criar-conta/` |
 | Traduções | `src/lib/i18n/locales/` |
 | Tipos e dados de marketing | `src/lib/types/` e `src/lib/data/` |
 
